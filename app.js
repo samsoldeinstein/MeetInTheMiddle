@@ -15,6 +15,17 @@ function debug(query) {
     console.log("Restricted due to " + query);
 }
 
+window.addEventListener('load', async e => {
+    if ('serviceWorker' in navigator) {
+        try {
+            navigator.serviceWorker.register('serviceworker.js');
+            console.log('SW registered');
+        } catch (error) {
+            console.log('SW failed');
+        }
+    }
+});
+
 function initMap() {
 
     var placesData = [];
@@ -266,7 +277,7 @@ function initMap() {
                 placeData += "<hr> <img src='" + place.photos[0].getUrl({
                     'maxWidth': 200,
                     'maxHeight': 200
-                }) + "' />";
+                }) + "' alt='results' />";
             }
 
             if (place.rating != undefined) {

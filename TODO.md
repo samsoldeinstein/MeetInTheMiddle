@@ -7,8 +7,9 @@
 - [x] Multiple Channels with viewing period of 1 day [ history: count ]
 - [x] Show place name on location marker along with the address
 - [x] Remove individual locations along with currently available clear all option
-- [ ] Map reload issue [ reduce count ] 🚩
+- [ ] See what offline screen shows [ PWA ]
 - [ ] Add location tracker popUp `develop`
+- [ ] Map reload issue [ reduce count ] 🚩
 - [ ] Add `my location` sharing option for anonymous usage
 - [ ] Draggable Markers
 - [ ] More informative Landing page

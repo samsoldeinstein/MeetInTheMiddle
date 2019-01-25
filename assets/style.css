@@ -110,7 +110,9 @@ Meeting.css
 /*
 index.html
 */
-
+.input-field {
+    display: flex;
+}
 
 #pseudo-nav {
     margin-top: 10px;
